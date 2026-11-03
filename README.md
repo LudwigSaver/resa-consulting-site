@@ -23,6 +23,6 @@ Statisk webbplats byggd för GitHub Pages. Ingen PHP, databas eller egen server 
 ## Före publicering
 - Bekräfta att priserna från 2025 fortfarande gäller.
 - Fastställ eventuella villkor och kostnader efter Kontelios första fria år.
-- Kontrollera att telefonnummer `072-875 49 89` och e-post `info@resaconsulting.se` är aktuella.
+- Kontrollera att telefonnummer `076-755 51 25` och e-post `info@resaconsulting.se` är aktuella.
 - Kontaktknapparna använder e-postlänkar. Ingen formulärserver krävs.
 - Inga externa skript eller analyscookies har installerats.
