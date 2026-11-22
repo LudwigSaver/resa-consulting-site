@@ -1,0 +1,27 @@
+name: Validate RESA site branding and prices
+on:
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'styles.css'
+      - 'test/**'
+      - '.github/workflows/site-validation.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'styles.css'
+      - 'test/**'
+      - '.github/workflows/site-validation.yml'
+permissions:
+  contents: read
+jobs:
+  site:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate customer-facing names, prices, links and mobile layout
+        run: node --test test/siteContent.test.js
